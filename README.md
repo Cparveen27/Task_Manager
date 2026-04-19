@@ -22,15 +22,15 @@ This app helps users manage daily tasks efficiently with features like dark mode
 
 - HTML5
 - CSS3
-= JavaScript
+- JavaScript
 
 ## 📂 Project Structure
 
 Task_Manager/
-|---index.html
-|---style.css
-|---script.js
-|---README.md
+- |---index.html
+- |---style.css
+- |---script.js
+- |---README.md
 
 
 ## ▶️ How to Run the Project
