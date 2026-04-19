@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App */
+.app {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.top-bar input {
+    flex: 1;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input, select {
+    flex: 1;
+}
+
+/* Buttons */
+button {
+    background: #ffffff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* Tasks */
+ul {
+    list-style: none;
+}
+
+li {
+    background: rgba(255,255,255,0.3);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Categories */
+.study { border-left: 4px solid #4facfe; }
+.work { border-left: 4px solid #43e97b; }
+.personal { border-left: 4px solid #fa709a; }
+
+/* Task buttons */
+.task-buttons button {
+    margin-left: 5px;
+}
+
+/* Empty */
+#emptyMsg {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+}
+
+body.dark .card {
+    background: rgba(0,0,0,0.7);
+    color: white;
+}
+
+body.dark input,
+body.dark select {
+    background: #2c2c2c;
+    color: white;
+}
+
+body.dark li {
+    background: rgba(255,255,255,0.1);
+}
+
+body.dark button {
+    background: #333;
+    color: white;
+}
+
+body.dark button:hover {
+    background: #555;
+}

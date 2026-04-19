@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="card">
+        <h1>Task Manager</h1>
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <input type="text" id="search" placeholder="🔍 Search..." onkeyup="searchTask()">
+            <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <input type="date" id="dueDate">
+
+            <select id="category">
+                <option>Study</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+        <p id="emptyMsg">No tasks yet 🚀</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
